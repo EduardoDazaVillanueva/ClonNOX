@@ -339,3 +339,47 @@ svg {
     color: #1d1d1db3;
     line-height: 1.8;
 }
+
+
+/* Seccion 5 */
+.section-5{
+    margin-top: 125px;
+    margin-bottom: 90px;
+    padding: 0 42px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 60px;
+}
+
+.section-5__container{
+    flex-basis: 50%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-5__title{
+    font-size: 18px;
+}
+
+.section-5__text{
+    font-size: 14px;
+}
+
+.section-5__subtext{
+    font-size: 14px;
+    text-decoration: underline;
+    color: #FF5136;
+
+    transition: opacity 250ms;
+}
+
+.section-5__subtext:hover {
+    opacity: .6;
+}
+
