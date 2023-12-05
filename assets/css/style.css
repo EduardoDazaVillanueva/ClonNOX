@@ -1,16 +1,15 @@
-body{
+body {
     width: 100%;
     font-family: 'ibm';
 
     overflow-x: hidden;
 }
 
-svg{
+svg {
     width: 20px;
-    fill: white;
 }
 
-.nav{
+.nav {
     width: 100%;
 
     position: fixed;
@@ -23,17 +22,48 @@ svg{
     padding: 12px 38px;
 
     color: white;
-    
+
+    animation: header linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 100px;
     z-index: 10;
 
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     background-color: transparent;
 }
 
-.logo{
+@keyframes header {
+    to {
+        background: white;
+        color: black;
+
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+.logo {
     width: 100px;
 }
-.nav__list{
+
+.logo--top {
+    position: absolute;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+
+    animation: logo linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 100px;
+
+    z-index: 1;
+}
+
+@keyframes logo {
+    to {
+        opacity: 1;
+    }
+}
+
+.nav__list {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -41,7 +71,7 @@ svg{
     flex-basis: 85.5%;
 }
 
-.nav__options{
+.nav__options {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -50,37 +80,56 @@ svg{
     font-size: 14px;
 }
 
-.nav__options svg{
+.nav__options svg {
     width: 19px;
     padding-top: 3px;
+
+    fill: white;
+
+    animation: svg linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 100px;
 }
 
-.nav__options:hover{
+.nav__options:hover {
     opacity: .5;
     cursor: pointer;
 }
 
-.nav__sublist{
+.nav__sublist {
     display: none;
 }
-.nav__suboptions{}
 
-.nav__icons{
+.nav__suboptions {}
+
+.nav__icons {
     display: flex;
     gap: 20px;
 }
 
-.nav__icon{
+.nav__icon {
     width: 100%;
 }
 
-.nav__icon svg{
+.nav__icon svg {
     width: 25px;
+
+    fill: white;
+
+    animation: svg linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 100px;
+}
+
+@keyframes svg {
+    to {
+        fill: black;
+    }
 }
 
 
 /* Primera Sección */
-.section-1{
+.section-1 {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -93,7 +142,7 @@ svg{
     cursor: grab;
 }
 
-.section-1__text-container{
+.section-1__text-container {
     display: flex;
     flex-direction: column;
     gap: 13px;
@@ -104,17 +153,17 @@ svg{
     z-index: 1;
 }
 
-.section-1__parrafo{
+.section-1__parrafo {
     font-size: 12px;
     color: #ffffffbf;
 }
 
-.section-1__title{
+.section-1__title {
     font-size: 36px;
     font-weight: bold;
 }
 
-.section-1__btn{
+.section-1__btn {
     margin-top: 10px;
 
     width: fit-content;
@@ -124,14 +173,131 @@ svg{
     border-radius: 40px;
 
     font-size: 14px;
-    
+
 }
 
-.section-1__video{
+.section-1__video {
     position: absolute;
     top: 0;
     bottom: 0;
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+
+/* Seccion 2 */
+.section-2 {
+    margin-top: 70px;
+    padding: 0 42px;
+}
+
+.section-2__header {}
+
+.header__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.section-2__products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.section-2__product {
+    flex-basis: calc(33% - 15px);
+}
+
+.product__container-img {
+    position: relative;
+}
+
+.product__img {}
+
+.product__img--top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+
+.product__img--top:hover {
+    opacity: 1;
+}
+
+.product__descrption {
+    margin-top: 20px;
+}
+
+.product__name {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.product__link {}
+
+.product__price {
+    font-size: 14px;
+}
+
+
+/* Seccion 3 */
+.section-3 {
+    margin-top: 70px;
+    padding: 0 42px;
+
+
+    margin-bottom: 70px;
+}
+
+.section-3__header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.header__link {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #FF5136;
+
+    transition: opacity 250ms;
+}
+
+.header__link:hover {
+    opacity: .6;
+}
+
+.section-3__imagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+
+    overflow: hidden;
+}
+
+.section-3__container-img {
+    flex-basis: 33%;
+
+    width: 595px;
+    height: 595px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.section-3__img {
+    transition: scale 300ms;
+}
+
+.section-3__img:hover {
+    scale: 1.1;
 }
