@@ -269,27 +269,32 @@
             <div class="footer__container">
                 <h5 class="footer__title">World Padel Tour® Official Sponsor</h5>
                 <ul class="footer__list">
-                    <li class="footer__option">World Padel Tour Official Racket</li>
-                    <li class="footer__option">World Padel Tour Official Bag</li>
-                    <li class="footer__option">World Padel Tour Official Accesories</li>
-                    <li class="footer__option">WPT Challenger Official Racket</li>
+                    <li class="footer__option footer__option-link"><a class="footer__link">World Padel Tour Official Racket</a></li>
+                    <li class="footer__option footer__option-link"><a class="footer__link">World Padel Tour Official Bag</a></li>
+                    <li class="footer__option footer__option-link"><a class="footer__link">World Padel Tour Official Accesories</a></li>
+                    <li class="footer__option footer__option-link"><a class="footer__link">WPT Challenger Official Racket</a></li>
                 </ul>
             </div>
 
             <div class="footer__container">
                 <h5 class="footer__title">Links</h5>
-                <ul class="footer__list">
-                    <li class="footer__option">Contacto </li>
-                    <li class="footer__option">Catálogos en PDF</li>
-                    <li class="footer__option">Términos de uso y compra</li>
-                    <li class="footer__option">Cambios y devoluciones</li>
-                    <li class="footer__option">Gastos de envío</li>
-                    <li class="footer__option">Política de privacidad</li>
-                    <li class="footer__option">Aviso legal</li>
-                    <li class="footer__option">NOX Future Academy</li>
-                    <li class="footer__option">NFT</li>
-                    <li class="footer__option">Palas de pádel</li>
-                    <li class="footer__option">Calzado de padel NOX. Avalado clínicamente y testado en laboratorio</li>
+                <ul class="footer__list footer__list-flex">
+                    <div class="footer__option-izq">
+                        <li class="footer__option"><a class="footer__link">Contacto</a></li>
+                        <li class="footer__option"><a class="footer__link">Catálogos en PDF</a></li>
+                        <li class="footer__option"><a class="footer__link">Términos de uso y compra</a></li>
+                        <li class="footer__option"><a class="footer__link">Cambios y devoluciones</a></li>
+                        <li class="footer__option"><a class="footer__link">Gastos de envío</a></li>
+                        <li class="footer__option"><a class="footer__link">Política de privacidad</a></li>
+                    </div>
+                    <div class="footer__option-der">
+                        <li class="footer__option"><a class="footer__link">Aviso legal</a></li>
+                        <li class="footer__option"><a class="footer__link">NOX Future Academy</a></li>
+                        <li class="footer__option"><a class="footer__link">NFT</a></li>
+                        <li class="footer__option"><a class="footer__link">Palas de pádel</a></li>
+                        <li class="footer__option"><a class="footer__link">Calzado de padel NOX. Avalado clínicamente y testado en laboratorio</a></li>
+                    </div>
+                    
                 </ul>
             </div>
 
@@ -297,13 +302,18 @@
                 <h5 class="footer__title">Newsletter</h5>
                 <p class="footer__text">Consejos de juego, noticias de los jugadores NOX y ofertas de produto. Mantente
                     al día de todas las novedades con nuestro boletín. Enviamos máximo un email al mes.</p>
-                <input type="email">
+                <input class="footer__search" type="email" placeholder="Dirección de correo electrónico">
             </div>
         </div>
 
         <div class="footer__containers-inf">
             <div class="footer__rrss-container">
+                
                 <ul class="footer__rrss-list">
+
+                    <select class="footer__select">
+                        <option class="footer__option-select" value="">Español</option>
+                    </select>
 
                     <li class="footer__rrss">
                         <a href="https://www.facebook.com/NoxPadel/" title="NOX en Facebook" target="_blank">
@@ -396,7 +406,7 @@
             <div class="footer__pay">
 
                 <div class="footer__pay-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24"
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24"
                         aria-labelledby="pi-american_express">
                         <title data-id="pi-american_express">American Express</title>
                         <g fill="none">
@@ -415,7 +425,7 @@
                 </div>
 
                 <div class="footer__pay-icon">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" x="0" y="0" width="38" height="24"
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" x="0" y="0" 
                         viewBox="0 0 165.521 105.965" xml:space="preserve" aria-labelledby="pi-apple_pay">
                         <title data-id="pi-apple_pay">Apple Pay</title>
                         <path fill="#000"
@@ -585,7 +595,7 @@
         </div>
 
         <div class="footer__derechos">
-            <p>Derechos de autor © 2023, <a href="/">NOX</a>.</p>
+            <p class="derechos__p">Derechos de autor © 2023, <a href="/">NOX</a>.</p>
         </div>
 
     </footer>
