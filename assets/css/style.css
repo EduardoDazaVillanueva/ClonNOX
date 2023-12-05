@@ -1,10 +1,13 @@
 body{
     width: 100%;
     font-family: 'ibm';
+
+    overflow-x: hidden;
 }
 
 svg{
     width: 20px;
+    fill: white;
 }
 
 .nav{
@@ -34,20 +37,21 @@ svg{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 20px;
-    flex-basis: 79.8%;
+    gap: 14px;
+    flex-basis: 85.5%;
 }
 
 .nav__options{
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
+    gap: 1px;
 
     font-size: 14px;
 }
 
 .nav__options svg{
-    width: 16px;
+    width: 19px;
     padding-top: 3px;
 }
 
@@ -81,14 +85,46 @@ svg{
     width: 100vw;
     height: 100vh;
 
+    display: flex;
+    align-items: center;
+
     overflow: hidden;
+
+    cursor: grab;
 }
 
 .section-1__text-container{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
 
-    z-index: 20;
+    margin-left: 40px;
 
+    color: white;
+    z-index: 1;
+}
+
+.section-1__parrafo{
+    font-size: 12px;
+    color: #ffffffbf;
+}
+
+.section-1__title{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.section-1__btn{
+    margin-top: 10px;
+
+    width: fit-content;
+    padding: 13px 32px;
+
+    background-color: #FF5136;
+    border-radius: 40px;
+
+    font-size: 14px;
+    
 }
 
 .section-1__video{
