@@ -248,16 +248,14 @@ svg {
 .section-3 {
     margin-top: 70px;
     padding: 0 42px;
-
-
-    margin-bottom: 70px;
 }
 
 .section-3__header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .header__link {
@@ -300,4 +298,44 @@ svg {
 
 .section-3__img:hover {
     scale: 1.1;
+}
+
+
+/* Seccion 4 */
+.section-4 {
+    margin-top: 40px;
+    padding: 0 42px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 40px;
+
+
+}
+
+.section-4__container-img {
+    flex-basis: 50%;
+}
+
+.section-4__img {}
+
+.section-4__container-text {
+    flex-basis: 50%;
+
+    max-width: 30%; 
+    overflow-wrap: break-word;
+    
+}
+
+.section-4__title {
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.section-4__text {
+    margin-top: 20px;
+    color: #1d1d1db3;
+    line-height: 1.8;
 }
