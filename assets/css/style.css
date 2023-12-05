@@ -173,7 +173,10 @@ svg {
     border-radius: 40px;
 
     font-size: 14px;
+}
 
+.section-1__btn:hover{
+    background-color: #c24835;
 }
 
 .section-1__video {
